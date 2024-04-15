@@ -1,5 +1,5 @@
 
-## h2 Welcome to my TRG Group interview process!
+## Welcome to my TRG Group interview process!
 
 Exercise Description:
 In this exercise, you'll find a Python method designed to calculate the sum of a sequence of integers based on three non-negative values: begin, end, and step. If the begin value exceeds the end value, the function returns 0.
