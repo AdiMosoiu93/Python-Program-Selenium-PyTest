@@ -16,7 +16,7 @@ sequence_sum(1,5,1) === 15 // 1 + 2 + 3 + 4 + 5
 sequence_sum(1,5,3) === 5 // 1 + 4
 
 ### Approach:
-To enhance user interaction, the code prompts users to input values directly. 
+To enhance user interaction, the code prompts users to input values directly in terminal. 
 The project has incorporated input validation to ensure users provide only integer values, minimizing the risk of errors. 
 
 ![image](https://github.com/AdiMosoiu93/TRG_Interview_Project/assets/130320111/b2dfde13-5f9d-4a83-9dcd-4a6e62cba33e)
