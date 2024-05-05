@@ -33,6 +33,15 @@ class SequenceSumCalculator:
             total_sum += i
         return total_sum
 
+# Below is an alternative approach achieving the same functionality as the `range()` function used in the previous method.
+# total_sum = 0
+#         # Loop through the sequence and add each integer to the sum
+#         current_value = self.begin
+#         while current_value <= self.end:
+#             total_sum += current_value
+#             current_value += self.step
+#         return total_sum
+
 # Create an instance of the SequenceSumCalculator class
 sequence_calculator = SequenceSumCalculator()
 
