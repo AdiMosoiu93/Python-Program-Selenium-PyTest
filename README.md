@@ -34,6 +34,8 @@ Thank you.
 ## The project also includes a test case using Selenium and PyTest:
 ### Description of test case: check if user can enter a html tag.
 
+Precondition: the checkcounter is 0.
+
 Steps to reproduce: 
 
 1. Go to http://testingchallenges.thetestingmap.org/index.php.
