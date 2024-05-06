@@ -29,3 +29,21 @@ The project has incorporated input validation to ensure users provide only integ
 I found this exercise to be an engaging one!
 
 Thank you.
+
+
+## The project also includes a test case using Selenium and PyTest:
+### Description of test case: check if user can enter a html tag.
+
+Precondition: the check counter is 0.
+
+Steps to reproduce: 
+
+1. Go to http://testingchallenges.thetestingmap.org/index.php.
+2. In the "First Name" input field enter `<h1>TRG Group</h1>`.
+3. Click on the "Submit" button.
+
+   Expected results:
+   - the check counter increases by 4
+   - the confirmation message is updated with the entered first name
+   - username is updated with the entered first name
+   
