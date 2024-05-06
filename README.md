@@ -43,5 +43,5 @@ Steps to reproduce:
    Expected results:
    - the check counter increases by 4
    - the confirmation message is updated with the entered first name
-   - user name is updated with the entered first name
+   - username is updated with the entered first name
    
