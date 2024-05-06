@@ -15,20 +15,20 @@ class SequenceSumCalculator:
         # Prompt the user to input the step value for the sequence.
         self.step = self.get_valid_input("Insert step value: ")
 
-        # Check if begin value is greater than end, and if not then return 0.
+        # Check if begin value is greater than end, and if so then return 0.
         if self.begin > self.end:
-            print("Begin value should not be greater than end value.")
+            print("\nCheck and correct the error:\n---Begin value should not be greater than end value---\n")
             return 0
-        # Check if step value is 0, and if not then return 0.
+        # Check if step value is 0, and if so then return 0.
         elif self.step == 0:
-            print("Step value should not be 0.")
+            print("\nCheck and correct the error:\n---Step value should not be 0---\n")
             return 0
 
     def get_valid_input(self, message):
         input_value = input(message)
         # Make sure that the user does not input negative numbers or floating-point numbers by using the isdigit() function.
         while not input_value.isdigit():
-            print("Please enter a positive integer number.")
+            print("\nCheck and correct the error:\n---Please enter a positive integer number---\n")
             input_value = input("Insert correct value: ")
         return int(input_value)
 
@@ -53,9 +53,11 @@ total_sum = 0
 # Create an instance of the SequenceSumCalculator class.
 sequence_calculator = SequenceSumCalculator()
 
-# Get user input for sequence parameters.
-while sequence_calculator.get_input() == 0:
-    pass  # Repeat until valid input is received.
+while True:
+    # Get user input for sequence parameters.
+    while sequence_calculator.get_input() == 0:
+        print("--- Let's start from the beginning again ---\n")
+        continue  # Start over if input is invalid.
 
 # Calculate and print the total sum.
 print("Total sum:", sequence_calculator.calculate_sequence_sum())
