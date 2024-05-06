@@ -32,7 +32,9 @@ Thank you.
 
 
 ## The project also includes a test case using Selenium and PyTest:
-### Description of test case:
+### Description of test case: check if user can enter a html tag.
+
+Steps to reproduce: 
 
 1. Go to http://testingchallenges.thetestingmap.org/index.php.
 2. In the "First Name" input field enter `<h1>TRG Group</h1>`.
