@@ -31,6 +31,12 @@ class TestScriptInjection:
 
     def test_script_injection(self, setup):
         self.script_injection = TestingChallenge1(self.driver)
+        # Precondition: the check counter is 0.
+        expected_value = 0
+        actual_value = self.script_injection.get_checks_counter()
+
+        assert actual_value == expected_value, "Precondition: checks_counter is not 0"
+
         # 1) Input script injection in First Name input field.
         self.script_injection.enter_first_name("<h1>TRG Group</h1>")
 
@@ -46,7 +52,7 @@ class TestScriptInjection:
 
         assert actual_value >= expected_value, "checks_counter is not at least expected_value"
 
-        # Assert that all expected values are present in the actual list
+        # Assert that all expected values are present in the actual list.
         expected_value = [
             "Other chars then alphabetic",
             "Space in the middle",
@@ -57,10 +63,10 @@ class TestScriptInjection:
 
         assert all(item in actual_value for item in expected_value), "Not all expected values are present in the actual value list"
 
-        # Get the actual list of displayed elements on the page
+        # Get the actual list of displayed elements on the page.
         displayed_elements = self.script_injection.check_scenarios_are_displayed()
 
-        # Assert that all expected elements are displayed on the page
+        # Assert that all expected elements are displayed on the page.
         for item in actual_value:
             assert item in displayed_elements, f"Element '{item}' is not displayed on the page"
 
