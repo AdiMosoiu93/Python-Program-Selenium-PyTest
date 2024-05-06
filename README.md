@@ -35,7 +35,7 @@ Thank you.
 ### Description of test case:
 
 1. Go to http://testingchallenges.thetestingmap.org/index.php.
-2. In the "First Name" input field enter "<h1>TRG Group</h1>".
+2. In the "First Name" input field enter `<h1>TRG Group</h1>`.
 3. Click on the "Submit" button.
 
    Expected results:
