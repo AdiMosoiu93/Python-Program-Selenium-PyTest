@@ -53,11 +53,9 @@ total_sum = 0
 # Create an instance of the SequenceSumCalculator class.
 sequence_calculator = SequenceSumCalculator()
 
-while True:
-    # Get user input for sequence parameters.
-    while sequence_calculator.get_input() == 0:
-        print("--- Let's start from the beginning again ---\n")
-        continue  # Start over if input is invalid.
+# Get user input for sequence parameters.
+while sequence_calculator.get_input() == 0:
+    pass  # Repeat until valid input is received.
 
 # Calculate and print the total sum.
 print("Total sum:", sequence_calculator.calculate_sequence_sum())
