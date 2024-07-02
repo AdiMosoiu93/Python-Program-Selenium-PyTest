@@ -1,5 +1,5 @@
 
-## Welcome to my TRG Group interview process!
+## Welcome to my project!
 
 ### Exercise Description:
 
